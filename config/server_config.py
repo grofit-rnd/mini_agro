@@ -105,6 +105,8 @@ def create_meta_server_config():
                             cloud_url='https://ec2-3-136-110-16.us-east-2.compute.amazonaws.com', 
                             cloud_username='ubuntu', 
                             base_dir='/home/ubuntu/mini_agro/')
+    sc.save_to_db()
+    sc._id = 'self'
     sc.dump_to_config_file()
     sc.save_to_db()
     return sc
