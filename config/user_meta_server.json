@@ -1,0 +1,1 @@
+{"_id": "user_meta_server", "server_id": "meta_server", "name": "user", "is_admin": true, "grofit_capsule": [], "grofit_gateway": [], "grofit_business_unit": [], "grofit_unit": [], "ims_source": [], "username": "user", "password": "pass", "full_data_access": true}
