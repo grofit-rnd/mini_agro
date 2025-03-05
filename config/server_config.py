@@ -97,6 +97,18 @@ def create_new_server(_id, server_id, name='meta_server', is_admin=False, cloud_
     sc.save_to_db()
     return sc
 
+def create_meta_server_config():
+    sc = create_new_server(_id='meta_server',
+                            server_id='meta_server',
+                            name='meta_server', 
+                            is_admin=True,
+                            cloud_url='https://ec2-3-136-110-16.us-east-2.compute.amazonaws.com', 
+                            cloud_username='ubuntu', 
+                            base_dir='/home/ubuntu/mini_agro/')
+    sc.dump_to_config_file()
+    sc.save_to_db()
+    return sc
+
 if __name__ == '__main__':
     sc = create_new_server(_id='syngenta_spain',
                             server_id='syngenta_spain',
