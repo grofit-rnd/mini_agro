@@ -1,6 +1,6 @@
 #!/bin/bash
 # check if the last directory is "grofit_rnd"
-source scripts/base_ws.sh
+source miniagro/scripts/base_ws.sh
 if [ $? -ne 0 ]; then
   echo "Error: The base_ws.sh script failed to run."
   return 1
