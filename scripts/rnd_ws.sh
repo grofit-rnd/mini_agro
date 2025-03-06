@@ -9,7 +9,7 @@ fi
 CURRENT_DIR=$(pwd)
 # build the Python path with the current directory and API server subdirectory
 PP="$CURRENT_DIR"
-
+PP="$PP/miniagro"
 # export GROFIT_RND_CONFIG_FILE='rnd_server.json'
 # export GROFIT_DM_CONFIG_FILE='dm_server.json'
 # export GROFIT_API_SERVER_NAME="agro_data"
